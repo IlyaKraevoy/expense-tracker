@@ -1,17 +1,82 @@
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: wheat;
 }
 
 body {
   
-}
-
-div {
-  
-}
-
-.account-inc-exp {
+  background-color: #f7f7f7;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+} 
+
+.main-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header header'
+  'users users account  account'
+  'accountTypes accountTypes categories transactions'
+  'addTransaction addTransaction addTransaction addTransaction';
+  grid-template-rows:  1fr;
+  background-color: lightgrey;
+}
+
+.main-container > div {
+  padding: 5px 0;
+  margin: 0.8rem;
+  font-size: 19px;
   
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  
+}
+
+h4 {
+  
+  
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+}
+
+.users {
+  grid-area: users;
+  text-align: center;
+}
+
+.account {
+  grid-area: account ;
+  
+  text-align: center;
+}
+
+.accountTypes {
+  grid-area: accountTypes;
+  text-align: center;
+}
+
+.categories {
+  grid-area: categories;
+  text-align: left;
+}
+
+.transactions {
+  grid-area: transactions;
+}
+
+.addTransaction {
+  grid-area: addTransaction;
 }
