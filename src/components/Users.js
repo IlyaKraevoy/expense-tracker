@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Header = () => {
+export const Users = () => {
   return (
     <div>
-      <h1>Expense Tracker</h1>
+      <h2>User: User</h2>
     </div>
   )
 }

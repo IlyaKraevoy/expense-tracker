@@ -3,11 +3,19 @@ import React from 'react'
 export const Categories = () => {
   return (
     <div>
-      <h3>Categories</h3>
+      <div>
+        <h2>Categories</h2>
+      </div>
       <ul>
-        <li>Food</li>
-        <li>Transport</li>
-        <li>Utilities</li>
+        <li>
+          <p>home</p>
+        </li>
+        <li>
+          <p>transport</p>
+        </li>
+        <li>
+          <p>food</p>
+        </li>
       </ul>
     </div>
   )
